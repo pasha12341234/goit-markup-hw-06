@@ -19,10 +19,30 @@ html {
 }
 
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+  .container {
+    max-width: 768px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .container {
+    max-width: 1158px;
+  }
+
 }
 
 .visually-hidden {
@@ -41,6 +61,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 .link {
   text-decoration: none;
 }
@@ -62,15 +83,15 @@ p {
 
 /* Header */
 
-.header {
+/* .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+} */
 
-.header-box {
+/* .header-box {
   display: flex;
-}
+} */
 
 /* logo */
 .logo {
@@ -100,13 +121,13 @@ p {
 }
 
 /* site-nav */
-.site-nav {
+/* .site-nav {
   display: flex;
   gap: 40px;
   margin-left: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-}
+} */
 
 .nav-link {
   position: relative;
@@ -120,6 +141,7 @@ p {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -141,13 +163,14 @@ p {
   color: #404bbf;
 }
 
-.site-contacts {
+/* .site-contacts {
   display: flex;
   gap: 40px;
   margin-left: auto;
   padding-top: 24px;
   padding-bottom: 24px;
-}
+} */
+
 .contacts-link {
   color: #434455;
   font-family: "Roboto";
@@ -158,10 +181,24 @@ p {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MAIN */
 
@@ -184,6 +221,7 @@ p {
   text-align: center;
   padding: 188px 0;
 }
+
 
 .hero-title {
   margin-bottom: 48px;
@@ -221,6 +259,7 @@ p {
 .skills {
   padding: 120px 0;
 }
+
 .skills-thumb {
   display: flex;
   justify-content: center;
@@ -269,6 +308,7 @@ p {
 .presentation {
   padding-bottom: 120px;
 }
+
 .presentation-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -282,6 +322,7 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+
 .presentation-list {
   display: flex;
   gap: 24px;
@@ -331,6 +372,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 .team-text {
   margin-top: 0;
   margin-bottom: 8px;
@@ -342,6 +384,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .social-list {
   display: flex;
   gap: 24px;
@@ -456,6 +499,7 @@ p {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .filters-button:hover,
 .filters-button:focus {
   background-color: #404bbf;
@@ -463,6 +507,7 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 /* portfolio */
 
 .portfolio-link {
@@ -484,6 +529,7 @@ p {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .portfolio-overlay-box {
   position: relative;
   overflow: hidden;
@@ -617,7 +663,8 @@ p {
 
 
 .footer-social-box {
-margin-right: 80px;}
+  margin-right: 80px;
+}
 
 
 
@@ -690,26 +737,28 @@ margin-right: 80px;}
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .footer-button:hover,
 .footer-button:focus {
-background-color: #404BBF;}
+  background-color: #404BBF;
+}
 
 .footer-button::after {
-content: "";
-width: 24px;
-height: 24px;
-background-image: url(../images/Frame\ 3\ \(1\).svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;}
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/Frame\ 3\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 .footer-box-feedback {
-display: flex;
-gap: 24px;
+  display: flex;
+  gap: 24px;
 
 
 
@@ -824,7 +873,7 @@ gap: 24px;
   border-color: #4d5ae5;
 }
 
-.contact-input:focus + .modal-icon {
+.contact-input:focus+.modal-icon {
   fill: #4d5ae5;
 }
 
@@ -910,7 +959,7 @@ gap: 24px;
   margin-right: 8px;
 }
 
-.modal-checkbox:checked + .checkbox-text::before {
+.modal-checkbox:checked+.checkbox-text::before {
   background-color: #404bbf;
   border: 1.25px solid #404bbf;
   border-radius: 2px;
@@ -919,7 +968,7 @@ gap: 24px;
   background-position: 50% 50%;
 }
 
-.modal-checkbox:focus + .checkbox-text::before {
+.modal-checkbox:focus+.checkbox-text::before {
   border: 1.25px solid #404bbf;
 }
 
